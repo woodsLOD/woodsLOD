@@ -116,9 +116,10 @@
                             <a id="people"></a>
                             <hr />
                             <br>
-                            <div class="header">
+                            <div class="header" id="topSection">
                                 <h2><span class="text-success">P</span>eople</h2>
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
+                                <br>
+                                <h4>James Marshall “Jimi” Hendrix</h4>
                                 <table class="table">
                                     <thead class="thead">
                                     <tr class="table-success">
@@ -129,24 +130,548 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the type of entity?</th>
+                                        <td>eac-cpf:entityType</td>
+                                        <td>Person</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the person's name?</th>
+                                        <td>foaf:firtsName</td>
+                                        <td>James Marshall "Jimi"</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the person's surname?</th>
+                                        <td>foaf:lastName</td>
+                                        <td>Hendrix</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the person's gender?</th>
+                                        <td>foaf:gender</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">How old is this person at the time of the event?</th>
+                                        <td>foaf:age</td>
+                                        <td>27</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place was the person born?</th>
+                                        <td>person:placeOfBirth</td>
+                                        <td>Seattle, Washington</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country was the person born?</th>
+                                        <td>person:countryOfBirth</td>
+                                        <td>United States of America</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When was the person born?</th>
+                                        <td>core:dateOfBirth</td>
+                                        <td>1942 November 27</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place did the person die?</th>
+                                        <td>person:placeOfDeath</td>
+                                        <td>Kensington, London</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country did the person die?</th>
+                                        <td>person:countryOfDeath</td>
+                                        <td>United Kingdom</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person die?</th>
+                                        <td>core:dateOfDeath</td>
+                                        <td>1970 September 18</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the person's citizenship?</th>
+                                        <td>person:citizeship</td>
+                                        <td>United States citizenship</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's occupation?</th>
+                                        <td>core:occupation</td>
+                                        <td>Musician, songwriter and producer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What did the person do?</th>
+                                        <td>core:knownFor</td>
+                                        <td>Musical career</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was the genre play by the person?</th>
+                                        <td>mo:Genre</td>
+                                        <td>Rock, Psychedelic Rock, Hard Rock, Blues, and R&B</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the label correlated to the person?</th>
+                                        <td>mo:label</td>
+                                        <td>Sue, PPX, RSVP, Track, Barclay, Polydor, Reprise, and Capitol</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity start?</th>
+                                        <td>mo:activity_start</td>
+                                        <td>1963</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity end?</th>
+                                        <td>mo:activity_end</td>
+                                        <td>1970</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person’s discography?</th>
+                                        <td>mo:discography</td>
+                                        <td><a href="https://en.wikipedia.org/wiki/Jimi_Hendrix_discography" target="_blank">https://en.wikipedia.o rg/wiki/Jimi_Hendrix_ discography</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is known by this person?</th>
+                                        <td>foaf:know</td>
+                                        <td>Janis Joplin, Eddie Kramer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the biographical note of the person?</th>
+                                        <td>eac-cpf:biogHist</td>
+                                        <td>Jimi Hendrix was an American rock guitarist, singer, and songwriter. He is widely regarded as one of the most influential guitarists in history and one of the most celebrated musicians of the 20th century.
+                                            <br>
+                                            <a href="https://www.biography.com/musician/jimihendrix" target="_blank">See the Biography</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <h4>Janis Lyn Joplin</h4>
+                                <table class="table">
+                                    <thead class="thead">
+                                    <tr class="table-success">
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Predicate</th>
+                                        <th scope="col">Object</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">What is the type of entity?</th>
+                                        <td>eac-cpf:entityType</td>
+                                        <td>Person</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's name?</th>
+                                        <td>foaf:firtsName</td>
+                                        <td>Janis Lyn</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's surname?</th>
+                                        <td>foaf:lastName</td>
+                                        <td>Joplin</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's gender?</th>
+                                        <td>foaf:gender</td>
+                                        <td>Female</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">How old is this person at the time of the event?</th>
+                                        <td>foaf:age</td>
+                                        <td>27</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place was the person born?</th>
+                                        <td>person:placeOfBirth</td>
+                                        <td>Port Arthur, Texas</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country was the person born?</th>
+                                        <td>person:countryOfBirth</td>
+                                        <td>United States of America</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When was the person born?</th>
+                                        <td>core:dateOfBirth</td>
+                                        <td>1943 January 19</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place did the person die?</th>
+                                        <td>person:placeOfDeath</td>
+                                        <td>Los Angeles, California</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country did the person die?</th>
+                                        <td>person:countryOfDeath</td>
+                                        <td>United States of America</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person die?</th>
+                                        <td>core:dateOfDeath</td>
+                                        <td>1970 October 4</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the person's citizenship?</th>
+                                        <td>person:citizeship</td>
+                                        <td>United States citizenship</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's occupation?</th>
+                                        <td>core:occupation</td>
+                                        <td>Singer and songwriter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What did the person do?</th>
+                                        <td>core:knownFor</td>
+                                        <td>Musical career</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was the genre play by the person?</th>
+                                        <td>mo:Genre</td>
+                                        <td>Psychedelic rock, Soul, Blues, and Blues Rock</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the label correlated to the person?</th>
+                                        <td>mo:label</td>
+                                        <td>Columbia Records</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity start?</th>
+                                        <td>mo:activity_start</td>
+                                        <td>1962</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity end?</th>
+                                        <td>mo:activity_end</td>
+                                        <td>1970</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person’s discography?</th>
+                                        <td>mo:discography</td>
+                                        <td><a href="https://en.wikipedia. org/wiki/Janis_Jopli n#Full_discography" target="_blank">https://en.wikipedia.o rg/wiki/Jimi_Hendrix_ discography</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is known by this person?</th>
+                                        <td>foaf:know</td>
+                                        <td>Jimi Hendrix</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What are the person's past projects?</th>
+                                        <td>foaf:pastProject</td>
+                                        <td>From 1966 to 1969 she was a member of the group “Big Brother and the Holding Company”</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the biographical note of the person?</th>
+                                        <td>eac-cpf:biogHist</td>
+                                        <td>Janis Lyn Joplin was an American singersongwriter who sang rock, soul and blues music. One of the most successful and widely known rock stars of her era, she was noted for her powerful mezzosoprano vocals and
+                                            "electric" stage presence.
+                                            <br>
+                                            <a href="https://www.biography.com/musician/janis-joplin" target="_blank">See the Biography</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <h4>Edwin H. Kramer</h4>
+                                <table class="table">
+                                    <thead class="thead">
+                                    <tr class="table-success">
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Predicate</th>
+                                        <th scope="col">Object</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">What is the type of entity?</th>
+                                        <td>eac-cpf:entityType</td>
+                                        <td>Person</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's name?</th>
+                                        <td>foaf:firtsName</td>
+                                        <td>Edwin H</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's surname?</th>
+                                        <td>foaf:lastName</td>
+                                        <td>Kramer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's gender?</th>
+                                        <td>foaf:gender</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">How old is this person at the time of the event?</th>
+                                        <td>foaf:age</td>
+                                        <td>27</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place was the person born?</th>
+                                        <td>person:placeOfBirth</td>
+                                        <td>Cape Town</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country was the person born?</th>
+                                        <td>person:countryOfBirth</td>
+                                        <td>Union of South Africa</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When was the person born?</th>
+                                        <td>core:dateOfBirth</td>
+                                        <td>1942 April 19</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the person's citizenship?</th>
+                                        <td>person:citizeship</td>
+                                        <td>South Africans citizenship</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's occupation?</th>
+                                        <td>core:occupation</td>
+                                        <td>Producer, Audio engineer, Musician, and Photographer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What did the person do?</th>
+                                        <td>core:knownFor</td>
+                                        <td>Producer and engineer career</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was the genre play by the person?</th>
+                                        <td>mo:Genre</td>
+                                        <td>Rock</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity start?</th>
+                                        <td>mo:activity_start</td>
+                                        <td>1962</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity end?</th>
+                                        <td>mo:activity_end</td>
+                                        <td>Ongoing</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person’s discography?</th>
+                                        <td>mo:discography</td>
+                                        <td><a href="https://en.wikipedia.org/wiki/Eddie_Kramer#Production_credits" target="_blank">https://en.wikipedia.o rg/wiki/Jimi_Hendrix_ discography</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is known by this person?</th>
+                                        <td>foaf:know</td>
+                                        <td>Jimi Hendrix</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the biographical note of the person?</th>
+                                        <td>eac-cpf:biogHist</td>
+                                        <td>Edwin H. Kramer is a South AfricanEnglish recording producer and engineer. He has collaborated with several artists now in the Rock and Roll Hall of Fame
+                                            <br>
+                                            <a href="http://www.eddie-kramer.com/eddie-kramer-biography/" target="_blank">See the Biography</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <h4>Abbot Howard Hoffman</h4>
+                                <table class="table">
+                                    <thead class="thead">
+                                    <tr class="table-success">
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Predicate</th>
+                                        <th scope="col">Object</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">What is the type of entity?</th>
+                                        <td>eac-cpf:entityType</td>
+                                        <td>Person</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's name?</th>
+                                        <td>foaf:firtsName</td>
+                                        <td>Abbot Howard</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's surname?</th>
+                                        <td>foaf:lastName</td>
+                                        <td>Hoffman</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's gender?</th>
+                                        <td>foaf:gender</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">How old is this person at the time of the event?</th>
+                                        <td>foaf:age</td>
+                                        <td>33</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place was the person born?</th>
+                                        <td>person:placeOfBirth</td>
+                                        <td>Worcester, Massachusetts</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country was the person born?</th>
+                                        <td>person:countryOfBirth</td>
+                                        <td>United States of America</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When was the person born?</th>
+                                        <td>core:dateOfBirth</td>
+                                        <td>1936 November 30</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place did the person die?</th>
+                                        <td>person:placeOfDeath</td>
+                                        <td>Solebury Township, Pennsylvania</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country did the person die?</th>
+                                        <td>person:countryOfDeath</td>
+                                        <td>United States of America</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person die?</th>
+                                        <td>core:dateOfDeath</td>
+                                        <td>1989 April 12</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the person's citizenship?</th>
+                                        <td>person:citizeship</td>
+                                        <td>United States citizenship</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's occupation?</th>
+                                        <td>core:occupation</td>
+                                        <td>Writer, activist, psychologist, speaker, revolutionary</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What did the person do?</th>
+                                        <td>core:knownFor</td>
+                                        <td>Political and social activist career. Also known as revolutionary man and icon of the antiwar movement, cofounders of the Youth International Party ("Yippies") and the leading proponent of the Flower Power movement.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was the genre play by the person?</th>
+                                        <td>mo:Genre</td>
+                                        <td>Nonfiction, Politics</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity start?</th>
+                                        <td>mo:activity_start</td>
+                                        <td>1967</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity end?</th>
+                                        <td>mo:activity_end</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is known by this person?</th>
+                                        <td>foaf:know</td>
+                                        <td>Eddie Kramer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What are the person's past projects?</th>
+                                        <td>foaf:pastProject</td>
+                                        <td>He was involved in the Student Nonviolent Coordinating Committee (SNCC), and organized Liberty House.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the biographical note of the person?</th>
+                                        <td>eac-cpf:biogHist</td>
+                                        <td>Abbot Howard Hoffman was an American political and social activist, anarchist, socialist, revolutionary who co-founded the Youth International Party. He was a leading proponent of the Flower Power movement. Hoffman remains an icon of the anti-war movement.
+                                            <br>
+                                            <a href="https://en.wikipedia.org/wiki/Abbie_Hoffman" target="_blank">See the Biography</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <h4>Michael Lang</h4>
+                                <table class="table">
+                                    <thead class="thead">
+                                    <tr class="table-success">
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Predicate</th>
+                                        <th scope="col">Object</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">What is the type of entity?</th>
+                                        <td>eac-cpf:entityType</td>
+                                        <td>Person</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's name?</th>
+                                        <td>foaf:firtsName</td>
+                                        <td>Michael</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's surname?</th>
+                                        <td>foaf:lastName</td>
+                                        <td>Lang</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's gender?</th>
+                                        <td>foaf:gender</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">How old is this person at the time of the event?</th>
+                                        <td>foaf:age</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which place was the person born?</th>
+                                        <td>person:placeOfBirth</td>
+                                        <td>Brooklyn, New York</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country was the person born?</th>
+                                        <td>person:countryOfBirth</td>
+                                        <td>United States of America</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When was the person born?</th>
+                                        <td>core:dateOfBirth</td>
+                                        <td>1944 December 11</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the person's citizenship?</th>
+                                        <td>person:citizeship</td>
+                                        <td>United States citizenship</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the person's occupation?</th>
+                                        <td>core:occupation</td>
+                                        <td>Concert promoter, producer and artistic manager</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What did the person do?</th>
+                                        <td>core:knownFor</td>
+                                        <td>Co-creator of the Woodstock Music & Art Festival</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the label correlated to the person?</th>
+                                        <td>mo:label</td>
+                                        <td>Just Sunshine Records</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity start?</th>
+                                        <td>mo:activity_start</td>
+                                        <td>1968</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the person's activity end?</th>
+                                        <td>mo:activity_end</td>
+                                        <td>Ongoing</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is known by this person?</th>
+                                        <td>foaf:know</td>
+                                        <td>Jimi Hendrix, Janis Joplin, Eddie Kramer</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What are the person's past projects?</th>
+                                        <td>foaf:pastProject</td>
+                                        <td>The 1968 Miami Pop Festival and the Altamont Free concert.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the biographical note of the person?</th>
+                                        <td>eac-cpf:biogHist</td>
+                                        <td>Michael Lang is an American concert promoter, producer and artistic manager who is best known as a co-creator of the Woodstock Music & Art Festival in 1969.
+                                            <br>
+                                            <a href="https://en.wikipedia.org/wiki/Michael_Lang_(producer)" target="_blank">See the Biography</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
