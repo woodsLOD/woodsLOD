@@ -105,9 +105,14 @@
                             <h2><span class="text-warning">M</span><span class="text-info">e</span><span class="text-danger">t</span><span class="text-success">a</span>data Alignment</h2>
                             <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis. Proin vel nisi eu urna venenatis vestibulum nec nec quam. Suspendisse justo nisi, malesuada vel enim eget, feugiat commodo eros. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                         </div>
+                        <!-- why I can't make the pdf downloadable? -->
+                        <div>
+                            <p><br>Click here to See the entire table and Download the <a href="https://woodslod.github.io/woodsLOD/assets/img/metaAlignTabl.pdf" title="Table1" target="_blank" class="btn btn-outline-primary btn-pill text-primary"><i class="far fa-file-pdf"></i> PDF</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
                         <div class="header">
                             <h2><span class="text-success">W</span>ho</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
                             <table class="table">
                                 <thead class="thead">
                                 <tr class="table-success">
@@ -123,51 +128,67 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Who is the creator?</th>
+                                    <td>Creator, <br>
+                                        Creator.Role</td>
+                                    <td>1XX: Main Entry Fields, <br>
+                                        100: Main Entry-Personal Name, <br>
+                                        $a: Personal Name</td>
+                                    <td>P94_has_creator, <br>
+                                        E12_Production> P14_carried_out_by> E39_Actor</td>
+                                    <td>artist, <br>
+                                        name</td>
+                                    <td>Creator Display ,<br>
+                                        Creator Extent ,<br>
+                                        Attribution Qualifier ,<br>
+                                        Creator Role</td>
+                                    <td>< name >, <br>
+                                        < namePart ></td>
+                                    <td>dcterms:creator</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Who is the publisher?</th>
+                                    <td>Publisher, <br>
+                                        Publisher.URI</td>
+                                    <td>250-260 – Edition and Imprint Fields, <br>
+                                        260: Publication, Distribution etc, <br>
+                                        $b: Name of publisher, distributor, etc.</td>
+                                    <td>P108_has_produced  E5_Event>, <br>
+                                        P11_had_participants> E39_Actor</td>
+                                    <td>label</td>
+                                    <td>/</td>
+                                    <td>< originalInfo >, <br>
+                                        < publisher ></td>
+                                    <td>dcterm:publisher</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Who is the contributor?</th>
+                                    <td>Contributor, <br>
+                                        Contributor.Role</td>
+                                    <td>/</td>
+                                    <td>E5_Event> P11_had_participants> E39_Actor.</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>< role >, <br>
+                                        < roleTerm ></td>
+                                    <td>dc:contributor</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Who is the owner of item's rights?</th>
+                                    <td>Rights</td>
+                                    <td>/</td>
+                                    <td>E72_Legal_Object> P105_right_held_by> E39_Actor</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>< accesConditions >, <br>
+                                        < useAndReproduction ></td>
+                                    <td>edm:rights</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="header">
                             <h2><span class="text-warning">W</span>hen</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
                             <table class="table">
                                 <thead class="thead">
                                 <tr class="table-warning">
@@ -183,51 +204,50 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">When the item was created?</th>
+                                    <td>Date, <br>
+                                        Date.Created</td>
+                                    <td>/</td>
+                                    <td>E12_Production/P4_has_time-span/E52_Time-Span</td>
+                                    <td>/</td>
+                                    <td>Display Date <br>
+                                        Earliet Date <br>
+                                        Latest Date <br>
+                                        Date Qualifier</td>
+                                    <td>< orginInfo >, <br>
+                                        < place ></td>
+                                    <td>dc:date, <br>
+                                        dcterms:created</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">When the item was published?</th>
+                                    <td>Date.Available, <br>
+                                        Date.Issue</td>
+                                    <td>250-260 – Edition and Imprint Fields <br>
+                                        260: Publication, Distribution etc. <br>
+                                        $c – Date of publication, distribution, etc.</td>
+                                    <td>/</td>
+                                    <td>release, release-date</td>
+                                    <td>/</td>
+                                    <td>< originInfo >, <br>
+                                        < dateIssued ></td>
+                                    <td>dcterms:hasPart</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">When the item was used?</th>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>skos:note</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="header">
                             <h2><span class="text-info">W</span>here</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
                             <table class="table">
                                 <thead class="thead">
                                 <tr class="table-info">
@@ -243,51 +263,61 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Where the item was published?</th>
+                                    <td>/</td>
+                                    <td>250-260 – Edition and Imprint Fields <br>
+                                        260: Publication, Distribution etc. <br>
+                                        $a – Place of publication, distribution, etc.</td>
+                                    <td>/</td>
+                                    <td>release, <br>
+                                        release-country, <br>
+                                        area, area-name, area-type</td>
+                                    <td>/</td>
+                                    <td>< originalInfo >, <br>
+                                        < place >, <br>
+                                        < placeTerm > </td>
+                                    <td>dcterms:issued</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Where the item is kept?</th>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>P55_has_current_location</td>
+                                    <td>area, area-name, area-type</td>
+                                    <td>Current Location</td>
+                                    <td>< location >, <br>
+                                        < physicalLocation ></td>
+                                    <td>edm:currentLocation</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Where the item was created?</th>
+                                    <td>Coverage, <br>
+                                        Coverage.Spatial</td>
+                                    <td>/</td>
+                                    <td>E12_Production/ <br>
+                                        P7_took_place_at/E53_place</td>
+                                    <td>place, place-type, place-coordinates</td>
+                                    <td>Creation Location</td>
+                                    <td>< originInfo >, <br>
+                                        < place ></td>
+                                    <td>dc:created, <br>
+                                        dc:coverage</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">Where the item was used?</th>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="header">
                             <h2><span class="text-danger">W</span>hat</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
                             <table class="table">
                                 <thead class="thead">
                                 <tr class="table-danger">
@@ -303,50 +333,108 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">What is the title?</th>
+                                    <td>Title</td>
+                                    <td>2XX: Title and title paragraph <br>
+                                        20X-24X: Title and Title-Related Fields <br>
+                                        245: Title Statement <br>
+                                        $a: Title <br>
+                                        $b: Remainder of title <br>
+                                        $c: Statement of responsability</td>
+                                    <td>E71_Man-Made_Thing> P102_has_title> E35_Title</td>
+                                    <td>release, <br>
+                                        release-title</td>
+                                    <td>Title</td>
+                                    <td>< tytleInfo >, <br>
+                                        < tilte ></td>
+                                    <td>dc:title, <br>
+                                        dcterrm:title</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">What is the type?</th>
+                                    <td>Type</td>
+                                    <td>/</td>
+                                    <td>E1_CRM_Entity> P2_has_type> E55_Type</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>< typeOfResource ></td>
+                                    <td>edm:type</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">What is the genre?</th>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>Work Type</td>
+                                    <td>< genre ></td>
+                                    <td>/</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">blablabla?</th>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <th scope="row">What is the language?</th>
+                                    <td>Language</td>
+                                    <td>/</td>
+                                    <td>E33_Language_Object> P72_has_language> E56_Language</td>
+                                    <td>release, <br>
+                                        release-language</td>
+                                    <td>/</td>
+                                    <td>< language >, <br>
+                                        < languageTerm ></td>
+                                    <td>dc:language</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">What is the subject?</th>
+                                    <td>Subject</td>
+                                    <td>6XX: Subject acess fields <br>
+                                        650: Subject Added Entry-Topical Term <br>
+                                        $a: Topical term or geographic name entry element <br>
+                                        $x: General subdivision <br>
+                                        $y: Chronological subdivision <br>
+                                        651: Subject Added Entry-Geographic Name <br>
+                                        $a: Geographic name $x: General subdivision <br>
+                                        $y: Chronological subdivision</td>
+                                    <td>E1_CRM_Entity> P129_is_subject_of> E89_Propositional_Object</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>< subject >, <br>
+                                        < topic >, <br>
+                                        < geographic >, <br>
+                                        < temporal ></td>
+                                    <td>dc:subject</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">What is the format?</th>
+                                    <td>Format, <br>
+                                        Format.Extent, <br>
+                                        Format.Medium</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>release, <br>
+                                        release-medium, <br>
+                                        release-medium-format</td>
+                                    <td>Measurements Display Format</td>
+                                    <td>< physicalDescription >, <br>
+                                        < form >, <br>
+                                        < extend ></td>
+                                    <td>dc:format</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">What is the description?</th>
+                                    <td>Description</td>
+                                    <td>3XX Physical Description, Etc., Fields <br>
+                                        300: Physical Description <br>
+                                        $a: Extent <br>
+                                        $b: Other physical details <br>
+                                        $c: Dimensions</td>
+                                    <td>E1_CRM_Entity> P3_has_note> E62_string</td>
+                                    <td>/</td>
+                                    <td>/</td>
+                                    <td>< subject >, <br>
+                                        < topic ></td>
+                                    <td>dc:description</td>
                                 </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div>
-                            <p><br>Click here to download the <a href="assets/img/metaAlignTabl.pdf" title="Table1" target="_blank" class="btn btn-outline-primary btn-pill text-primary"><i class="far fa-file-pdf"></i> PDF</a>.</p>
                         </div>
                     </div>
                 </div>
