@@ -131,8 +131,8 @@
                                     <th scope="row">Who is the creator?</th>
                                     <td>Creator, <br>
                                         Creator.Role</td>
-                                    <td>1XX: Main Entry Fields, <br>
-                                        100: Main Entry-Personal Name, <br>
+                                    <td>1XX - Main Entry Fields, <br>
+                                        100 - Main Entry-Personal Name, <br>
                                         $a: Personal Name</td>
                                     <td>P94_has_creator, <br>
                                         E12_Production> P14_carried_out_by> E39_Actor</td>
@@ -150,8 +150,8 @@
                                     <th scope="row">Who is the publisher?</th>
                                     <td>Publisher, <br>
                                         Publisher.URI</td>
-                                    <td>250-260 – Edition and Imprint Fields, <br>
-                                        260: Publication, Distribution etc, <br>
+                                    <td>25X-28X – Edition and Imprint Fields, <br>
+                                        260 - Publication, Distribution etc, <br>
                                         $b: Name of publisher, distributor, etc.</td>
                                     <td>P108_has_produced  E5_Event>, <br>
                                         P11_had_participants> E39_Actor</td>
@@ -165,7 +165,9 @@
                                     <th scope="row">Who is the contributor?</th>
                                     <td>Contributor, <br>
                                         Contributor.Role</td>
-                                    <td>/</td>
+                                    <td>5XX - Note Fields <br>
+                                        508 - Creation/Production Credits Note <br>
+                                        $a: Creation/production credits note </td>
                                     <td>E5_Event> P11_had_participants> E39_Actor.</td>
                                     <td>/</td>
                                     <td>/</td>
@@ -176,7 +178,10 @@
                                 <tr>
                                     <th scope="row">Who is the owner of item's rights?</th>
                                     <td>Rights</td>
-                                    <td>/</td>
+                                    <td>25X-28X – Edition and Imprint Fields <br>
+                                        264 - Production, Publication, Distribution, Manufacture, and Copyright Notice <br>
+                                        $b: Name of publisher, distributor, etc. <br>
+                                        $c: Date of production, publication, distribution, manufacture, or copyright notice</td>
                                     <td>E72_Legal_Object> P105_right_held_by> E39_Actor</td>
                                     <td>/</td>
                                     <td>/</td>
@@ -223,8 +228,8 @@
                                     <th scope="row">When the item was published?</th>
                                     <td>Date.Available, <br>
                                         Date.Issue</td>
-                                    <td>250-260 – Edition and Imprint Fields <br>
-                                        260: Publication, Distribution etc. <br>
+                                    <td>25X-28X – Edition and Imprint Fields <br>
+                                        260 - Publication, Distribution etc. <br>
                                         $c – Date of publication, distribution, etc.</td>
                                     <td>/</td>
                                     <td>release, release-date</td>
@@ -265,8 +270,8 @@
                                 <tr>
                                     <th scope="row">Where the item was published?</th>
                                     <td>/</td>
-                                    <td>250-260 – Edition and Imprint Fields <br>
-                                        260: Publication, Distribution etc. <br>
+                                    <td>25X-28X – Edition and Imprint Fields <br>
+                                        260 - Publication, Distribution etc. <br>
                                         $a – Place of publication, distribution, etc.</td>
                                     <td>/</td>
                                     <td>release, <br>
@@ -281,7 +286,10 @@
                                 <tr>
                                     <th scope="row">Where the item is kept?</th>
                                     <td>/</td>
-                                    <td>/</td>
+                                    <td>
+                                    841-88X - Holdings, Alternate Graphics, Etc.-General Information <br>
+                                    850 - Holding Institution <br>
+                                    $a: Holding Institution</td>
                                     <td>P55_has_current_location</td>
                                     <td>area, area-name, area-type</td>
                                     <td>Current Location</td>
@@ -336,7 +344,7 @@
                                     <th scope="row">What is the title?</th>
                                     <td>Title</td>
                                     <td>2XX: Title and title paragraph <br>
-                                        20X-24X: Title and Title-Related Fields <br>
+                                        20X-24X - Title and Title-Related Fields <br>
                                         245: Title Statement <br>
                                         $a: Title <br>
                                         $b: Remainder of title <br>
@@ -373,7 +381,9 @@
                                 <tr>
                                     <th scope="row">What is the language?</th>
                                     <td>Language</td>
-                                    <td>/</td>
+                                    <td>5XX - Note Fields <br>
+                                        546 - Language Note <br>
+                                        $a: Language note</td>
                                     <td>E33_Language_Object> P72_has_language> E56_Language</td>
                                     <td>release, <br>
                                         release-language</td>
@@ -385,11 +395,15 @@
                                 <tr>
                                     <th scope="row">What is the subject?</th>
                                     <td>Subject</td>
-                                    <td>6XX: Subject acess fields <br>
+                                    <td>6XX - Subject acess fields <br>
+                                        647 - Subject Added Entry-Named Event <br>
+                                        $a: Named event <br>
+                                        $x: General subdivision <br>
+                                        $y: Chronological subdivision <br><br>
                                         650: Subject Added Entry-Topical Term <br>
                                         $a: Topical term or geographic name entry element <br>
                                         $x: General subdivision <br>
-                                        $y: Chronological subdivision <br>
+                                        $y: Chronological subdivision <br><br>
                                         651: Subject Added Entry-Geographic Name <br>
                                         $a: Geographic name $x: General subdivision <br>
                                         $y: Chronological subdivision</td>
@@ -421,8 +435,8 @@
                                 <tr>
                                     <th scope="row">What is the description?</th>
                                     <td>Description</td>
-                                    <td>3XX Physical Description, Etc., Fields <br>
-                                        300: Physical Description <br>
+                                    <td>3XX - Physical Description, Etc., Fields <br>
+                                        300 - Physical Description <br>
                                         $a: Extent <br>
                                         $b: Other physical details <br>
                                         $c: Dimensions</td>
