@@ -14,6 +14,20 @@
         <link rel="stylesheet" href="./assets/css/lazy.css">
         <link rel="stylesheet" href="./assets/css/demo.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+
+        <style>
+
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+            }
+
+        </style>
+
     </head>
     <body class="index">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
@@ -104,12 +118,20 @@
                         <div class="header">
                             <h2><span class="text-warning">M</span><span class="text-info">e</span><span class="text-danger">t</span><span class="text-success">a</span>data Alignment</h2>
                             <p style="text-align: justify;"> -- insert a description of what metadata alignment is -- </p>
+                            <br>
+                            <p>Click here to see the entire table in a <a href="assets/img/metaAlignTable.pdf" title="Table1" target="_blank" class="btn btn-outline-primary btn-pill text-primary"><i class="far fa-file-pdf"></i> PDF</a> version of our data, or download it.</p>
                         </div>
-                        <!-- why I can't make the pdf downloadable? -->
-                        <div>
-                            <p style="text-align: center; font-size:15px;"><br>Click here to see the entire table in a PDF version of our data <br><a href="assets/img/metaAlignTable.pdf" title="Table1" target="_blank" class="btn btn-outline-primary btn-pill text-primary"><i class="far fa-file-pdf"></i> PDF</a>.</p>
-                        </div>
+                        <hr />
+                        <h5>Quick View:</h5>
+                        <a href="metaAlign.html#institution" class="btn btn-outline-primary btn-pill"><i class="fas fa-briefcase"></i> Institution</a>
+                        <a href="metaAlign.html#standard" class="btn btn-outline-secondary btn-pill"><i class="fas fa-laptop-code"></i> Standard</a>
+                        <a href="metaAlign.html#who" class="btn btn-outline-success btn-pill"><i class="fas fa-user-circle"></i> Who</a>
+                        <a href="metaAlign.html#when" class="btn btn-outline-warning btn-pill"><i class="far fa-calendar-alt"></i> When</a>
+                        <a href="metaAlign.html#where" class="btn btn-outline-info btn-pill"><i class="fas fa-globe"></i> Where</a>
+                        <a href="metaAlign.html#what" class="btn btn-outline-danger btn-pill"><i class="fas fa-lightbulb"></i> What</a>
+
                     </div>
+                    <a id="institution"></a>
                     <div class="col-12 col-md-8 offset-md-2">
                         <div class="header">
                             <h2><span class="text-warning">I</span><span class="text-info">n</span><span class="text-danger">s</span><span class="text-success">t</span>itution involved</h2>
@@ -195,7 +217,12 @@
                                     <td>EDM</td>
                                 </tr>
                             </table>
+                            <a id="standard"></a>
+                            <br>
                             <hr />
+
+                            <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-lg btn-outline-primary btn-pill"><i class="fas fa-arrow-circle-up"></i></button>
+
                             <div class="header">
                                 <h2><span class="text-warning">S</span><span class="text-info">t</span><span class="text-danger">a</span><span class="text-success">n</span>dards involved</h2>
                                 <h5>SOMA</h5>
@@ -216,6 +243,8 @@
                         </div>
                     </div>
                     <div class="col-auto">
+                        <a id="who"></a>
+                        <br>
                         <div class="header">
                             <h2><span class="text-warning">A</span><span class="text-info">l</span><span class="text-danger">i</span><span class="text-success">g</span>nment</h2>
                             <br>
@@ -299,6 +328,8 @@
                                 </tbody>
                             </table>
                         </div>
+                        <a id="when"></a>
+                        <br>
                         <div class="header">
                             <h2><span class="text-warning">W</span>hen</h2>
                             <table class="table">
@@ -358,6 +389,8 @@
                                 </tbody>
                             </table>
                         </div>
+                        <a id="where"></a>
+                        <br>
                         <div class="header">
                             <h2><span class="text-info">W</span>here</h2>
                             <table class="table">
@@ -431,6 +464,8 @@
                                 </tbody>
                             </table>
                         </div>
+                        <a id="what"></a>
+                        <br>
                         <div class="header">
                             <h2><span class="text-danger">W</span>hat</h2>
                             <table class="table">
@@ -579,6 +614,29 @@
             </li>
         </ul>
     </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 600;
+            document.documentElement.scrollTop = 600;
+        }
+    </script>
+
     </body>
     <footer class="footer-1 bg-light text-center text-dark">
         <div class="container">
