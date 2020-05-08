@@ -38,6 +38,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="item.html#item">Items</a>
                             <a class="dropdown-item" href="erMod.html#erMod">E/R Model</a>
+                            <a class="dropdown-item" href="metaStand.html#metaStand">Metadata standard identification</a>
                             <a class="dropdown-item" href="metaAlign.html#metaAlign">Metadata Alignment</a>
                             <a class="dropdown-item" href="theorMod.html#theorMod">Theoretical Model</a>
                             <a class="dropdown-item" href="concMod.html#concMod">Conceptual Model</a>
@@ -103,7 +104,7 @@
                     <div class="col-12 col-md-8 offset-md-2">
                         <div class="header">
                             <h2><span class="text-success">C</span><span class="text-danger">o</span><span class="text-warning">n</span><span class="text-info">c</span>eptual Model</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis. Proin vel nisi eu urna venenatis vestibulum nec nec quam. Suspendisse justo nisi, malesuada vel enim eget, feugiat commodo eros. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sit amet elit eget nunc ultrices pretium vel nec turpis. Ut ultricies laoreet felis, vel lacinia nibh convallis aliquet. Donec eget nibh ac justo tincidunt bibendum a sit amet sapien. In luctus mi quis est viverra, et faucibus nunc vulputate.
+                            <p style="text-align: justify;">We want our data to be accessible, readable, usable, acceptable and most of all linked. For that purpose, we have used several ontologies to describe in the most efficient way all the details of our entities and do the step forward from the theoretical model.
                             <hr />
                             <div>
                                 <h2><span class="text-success">W</span>ho</h2>
@@ -281,31 +282,156 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
+                                        <th scope="row">What is the type?</th>
                                         <td>...</td>
                                         <td>...</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the name of the place?</th>
+                                        <td>gn:name</td>
+                                        <td>GeoNames</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the alternate name of the place?</th>
+                                        <td>gn:alternateName</td>
+                                        <td>GeoNames</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the feature of the place?</th>
+                                        <td>gn:Feature</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature class of the place?</th>
+                                        <td>gn:FeatureClass</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature code of the place?</th>
+                                        <td>gn:FeatureCode</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country is the place located?</th>
+                                        <td>gn:parentCountry</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the country code?</th>
+                                        <td>gn:countryCode</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the first order administrative division of the place?</th>
+                                        <td>gn:parentADM1</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the second order administrative division of the place?</th>
+                                        <td>gn:parentADM2</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the third order administrative division of the place?</th>
+                                        <td>gn:parentADM3</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the postal code?</th>
+                                        <td>gn:postalCode</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the dimension of the place?</th>
+                                        <td>P43_has_dimension>E54_dimension</td>
+                                        <td>CIDOC_CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What type is it?</th>
+                                        <td>dbo:type</td>
+                                        <td>Dbpedia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the address?</th>
+                                        <td>dbo:address</td>
+                                        <td>Dbpedia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the longitude?</th>
+                                        <td>wgs84_pos:long</td>
+                                        <td>Basic Geo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the latitude?</th>
+                                        <td>wgs84_pos:lat</td>
+                                        <td>Basic Geo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the altitude?</th>
+                                        <td>wgs84_pos:alt</td>
+                                        <td>Basic Geo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the map location??</th>
+                                        <td>gn:locationMap</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is an abstract of the place?</th>
+                                        <td>dbo:abstract</td>
+                                        <td>Dbpedia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is nearby the place?</th>
+                                        <td>gn:nearbyFeature</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is the current owner?</th>
+                                        <td>P52_has_current_owner>E39_Actor</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is the former owner?</th>
+                                        <td>P51_has_former_or_current_owner>E39_Actor</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the ownership change?</th>
+                                        <td>dbo:dateAgreement</td>
+                                        <td>Dbpedia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the access to the site?</th>
+                                        <td>schema:publicAccess</td>
+                                        <td>schema.org</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the maximum attendee capacity</th>
+                                        <td>schema:maximumAttendeeCapacity</td>
+                                        <td>schema.org</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event associated to the place?</th>
+                                        <td>schema:event</td>
+                                        <td>schema.org</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the wikipedia article about the place?</th>
+                                        <td>gn:wikipediaArticle</td>
+                                        <td>GeoNames</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">What is the tour booking page?</th>
+                                        <td>schema:tourBookingPage</td>
+                                        <td>schema.org</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="header">
+							<div>
                                 <h2><span class="text-danger">W</span>hat</h2>
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
                                 <table class="table">
                                     <thead class="thead">
                                     <tr class="table-danger">
@@ -316,24 +442,99 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the title?</th>
+                                        <td>crm:P102_has_title</td>
+                                        <td>CIDOC-CRM</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the type?</th>
+                                        <td>rdf:type</td>
+                                        <td>RDF(S)</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the subject?</th>
+                                        <td>dcterms:subject</td>
+                                        <td>DCMI Metadata Terms</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the core of the concept?</th>
+                                        <td>dcterms:abstract</td>
+                                        <td>DCMI Metadata Terms</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the reason to be of the concept?</th>
+                                        <td>crm:P21_had_general_purpose</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the concepts time span?</th>
+                                        <td>crm:P4_has_time_span</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the year that the concept falls within?</th>
+                                        <td>crm:P10_falls_within</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What has the concept influenced?</th>
+                                        <td>prov:influenced</td>
+                                        <td>PROV-O</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event related to the concept?</th>
+                                        <td>dbo:related</td>
+                                        <td>DBpedia Ontology</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who was an active member of the concept?</th>
+                                        <td>foaf: member</td>
+                                        <td>FOAF</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was motivated by?</th>
+                                        <td>crm:P17_was_motivated_by</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What the concept was influenced by?</th>
+                                        <td>crm:P15_was_influenced_by</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was based on?</th>
+                                        <td>crm:P136_was_based_on</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What represents?</th>
+                                        <td>crm:P138_represents</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In what type of event were relevant?</th>
+                                        <td>mo:festival</td>
+                                        <td>Music Ontology</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What type of musical manifestation?</th>
+                                        <td>mo:tribute_to</td>
+                                        <td>Music Ontology</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the place related to the concept?</th>
+                                        <td>dbpedia:related</td>
+                                        <td>dbPedia</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the primary source?</th>
+                                        <td>prov:PrimarySource</td>
+                                        <td>PROV-O</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the alternative source?</th>
+                                        <td>prov:alternateOf</td>
+                                        <td>PROV-O</td>
                                     </tr>
                                     </tbody>
                                 </table>

@@ -52,6 +52,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="item.html#item">Items</a>
                             <a class="dropdown-item" href="erMod.html#erMod">E/R Model</a>
+                            <a class="dropdown-item" href="metaStand.html#metaStand">Metadata standard identification</a>
                             <a class="dropdown-item" href="metaAlign.html#metaAlign">Metadata Alignment</a>
                             <a class="dropdown-item" href="theorMod.html#theorMod">Theoretical Model</a>
                             <a class="dropdown-item" href="concMod.html#concMod">Conceptual Model</a>
@@ -117,13 +118,13 @@
                     <div class="col-12 col-md-8 offset-md-2">
                         <div class="header">
                             <h2><span class="text-success">D</span><span class="text-danger">a</span><span class="text-warning">t</span><span class="text-info">a</span> Representation</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis. Proin vel nisi eu urna venenatis vestibulum nec nec quam. Suspendisse justo nisi, malesuada vel enim eget, feugiat commodo eros. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sit amet elit eget nunc ultrices pretium vel nec turpis. Ut ultricies laoreet felis, vel lacinia nibh convallis aliquet. Donec eget nibh ac justo tincidunt bibendum a sit amet sapien. In luctus mi quis est viverra, et faucibus nunc vulputate.</p>
+                            <p style="text-align: justify;">It is the level that we combine the two previous steps and moving to the description of our data with the use of both predicate and natural language, identifying the triplets (subject/predicate/object).</p>
                             <br>
-                            <h3>Quick View:</h3>
-                            <a href="dataRep.html#people" class="btn btn-outline-success btn-pill"><i class="fas fa-user-circle"></i> People</a>
-                            <a href="dataRep.html#date" class="btn btn-outline-warning btn-pill"><i class="far fa-calendar-alt"></i> Date</a>
-                            <a href="dataRep.html#place" class="btn btn-outline-info btn-pill"><i class="fas fa-globe"></i> Place</a>
-                            <a href="dataRep.html#concept" class="btn btn-outline-danger btn-pill"><i class="fas fa-lightbulb"></i> Concept</a>
+                            <h3 style="text-align:center">Quick View:</h3>
+                            <p style="text-align:center"><a href="dataRep.html#people" class="btn btn-outline-success btn-pill" title="Go to people"><i class="fas fa-user-circle"></i> People</a>
+                            <a href="dataRep.html#date" class="btn btn-outline-warning btn-pill" title="Go to dates"><i class="far fa-calendar-alt"></i> Dates</a>
+                            <a href="dataRep.html#place" class="btn btn-outline-info btn-pill" title="Go to places"><i class="fas fa-globe"></i> Places</a>
+                            <a href="dataRep.html#concept" class="btn btn-outline-danger btn-pill" title="Go to concepts"><i class="fas fa-lightbulb"></i> Concepts</a></p>
 
 
                             <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-lg btn-outline-primary btn-pill"><i class="fas fa-arrow-circle-up"></i></button>
@@ -734,8 +735,238 @@
                             <br>
                             <div class="header">
                                 <h2><span class="text-info">P</span>lace</h2>
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
+                                <hr/>
+                                <img src="assets/img/Bethel.jpg" alt="Crowd at Bethel" style="width:70%; padding-bottom:10px;"/>
+                                <h4>Bethel, NY</h4>
                                 <table class="table">
+                                    <thead class="thead">
+                                    <tr class="table-info">
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Predicate</th>
+                                        <th scope="col">Object</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <th scope="row">What is the type?</th>
+                                        <td>...</td>
+                                        <td>Place</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the name of the place?</th>
+                                        <td>gn:name</td>
+                                        <td>Bethel</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the alternate name of the place?</th>
+                                        <td>gn:alternateName</td>
+                                        <td>וייט לעיק  (yiddish)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature of the place?</th>
+                                        <td>gn:Feature</td>
+                                        <td>5108928</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature class of the place?</th>
+                                        <td>gn:FeatureClass</td>
+                                        <td>P (city, village...)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature code of the place?</th>
+                                        <td>gn:FeatureCode</td>
+                                        <td>PPL (Populated place)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country is the place located?</th>
+                                        <td>gn:parentCountry</td>
+                                        <td>United States</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the country code?</th>
+                                        <td>gn:countryCode</td>
+                                        <td>US</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the first order administrative division of the place?</th>
+                                        <td>gn:parentADM1</td>
+                                        <td>New York (NY)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the second order administrative division of the place?</th>
+                                        <td>gn:parentADM2</td>
+                                        <td>Sullivan (105)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the third order administrative division of the place?</th>
+                                        <td>gn:parentADM3</td>
+                                        <td>Town of Bethel (06310)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the postal code?</th>
+                                        <td>gn:postalCode</td>
+                                        <td>12720</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the latitude?</th>
+                                        <td>wgs84_pos:lat</td>
+                                        <td>41.68342  </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the longitude?</th>
+                                        <td>wgs84_pos:long</td>
+                                        <td>-74.87128</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the altitude?</th>
+                                        <td>wgs84_pos:alt</td>
+                                        <td>404</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the map location??</th>
+                                        <td>gn:locationMap</td>
+                                        <td><a href="https://www.geonames.org/5108928/bethel.html">https://www.geonames.org/5108928/bethel.html</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is an abstract of the place?</th>
+                                        <td>dbo:abstract</td>
+                                        <td>Bethel is a town in Sullivan County, New York, USA. The population was estimated at 4,255 in 2010. The town received worldwide fame after it became the host of the 1969 Woodstock Festival, which was originally planned for Wallkill, NY, but was relocated to Bethel after Wallkill withdrew.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is nearby the place?</th>
+                                        <td>gn:nearbyFeature</td>
+                                        <td>White Lake Church, Temple Beth El Cemetery, Old Bethel Cemetery, Chestnut Ridge Pond</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event associated to the place?</th>
+                                        <td>schema:event</td>
+                                        <td>Woodstock Festival</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the wikipedia article about the place?</th>
+                                        <td>gn:wikipediaArticle</td>
+                                        <td><a href="https://en.wikipedia.org/wiki/Bethel%2C_New_York<">https://en.wikipedia.org/wiki/Bethel%2C_New_York</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <h4>Woodstock, NY</h4>
+                                <table class="table">
+                                    <thead class="thead">
+                                    <tr class="table-info">
+                                        <th scope="col">Question</th>
+                                        <th scope="col">Predicate</th>
+                                        <th scope="col">Object</th>
+                                    </tr>
+                                    </thead>
+                                    <tr>
+                                        <th scope="row">What is the type?</th>
+                                        <td>...</td>
+                                        <td>Place</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the name of the place?</th>
+                                        <td>gn:name</td>
+                                        <td>Woodstock</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the alternate name of the place?</th>
+                                        <td>gn:alternateName</td>
+                                        <td>
+                                        우드스톡 (korean)<br>
+                                        ウッドストック (japanese)<br>
+                                        Вудсток (russian)<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature of the place?</th>
+                                        <td>gn:Feature</td>
+                                        <td>5145072</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature class of the place?</th>
+                                        <td>gn:FeatureClass</td>
+                                        <td>P (city, village...)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the feature code of the place?</th>
+                                        <td>gn:FeatureCode</td>
+                                        <td>PPL (Populated place)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country is the place located?</th>
+                                        <td>gn:parentCountry</td>
+                                        <td>United States</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the country code?</th>
+                                        <td>gn:countryCode</td>
+                                        <td>US</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the first order administrative division of the place?</th>
+                                        <td>gn:parentADM1</td>
+                                        <td>New York (NY)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the second order administrative division of the place?</th>
+                                        <td>gn:parentADM2</td>
+                                        <td>Ulster (111)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the third order administrative division of the place?</th>
+                                        <td>gn:parentADM3</td>
+                                        <td>Town of Woodstock (83052)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the postal code?</th>
+                                        <td>gn:postalCode</td>
+                                        <td>12498</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the latitude?</th>
+                                        <td>wgs84_pos:lat</td>
+                                        <td>42.04092</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the longitude?</th>
+                                        <td>wgs84_pos:long</td>
+                                        <td>-74.1182</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the altitude?</th>
+                                        <td>wgs84_pos:alt</td>
+                                        <td>171</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the map location??</th>
+                                        <td>gn:locationMap</td>
+                                        <td><a href="https://www.geonames.org/5145072/woodstock.html">https://www.geonames.org/5145072/woodstock.html</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is an abstract of the place?</th>
+                                        <td>dbo:abstract</td>
+                                        <td>Woodstock is a town in Ulster County, New York, United States. The population was 5,884 at the 2010 census, down from 6,241 at the 2000 census. Woodstock is in the northern part of the county, northwest of Kingston, and lies within the borders of the Catskill Park.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is nearby the place?</th>
+                                        <td>gn:nearbyFeature</td>
+                                        <td>Woodstock Reformed Church, Christs Lutheran Church </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event associated to the place?</th>
+                                        <td>schema:event</td>
+                                        <td>Woodstock Festival</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the wikipedia article about the place?</th>
+                                        <td>gn:wikipediaArticle</td>
+                                        <td><a href="https://en.wikipedia.org/wiki/Woodstock%2C_New_York">https://en.wikipedia.org/wiki/Woodstock%2C_New_York</a>></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <br>
+                                    <h4>Bethel Woods Center for Arts, NY</h4>
+                                    <table class="table">
                                     <thead class="thead">
                                     <tr class="table-info">
                                         <th scope="col">Question</th>
@@ -745,62 +976,224 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
+                                        <th scope="row">What is the type?</th>
                                         <td>...</td>
-                                        <td>...</td>
+                                        <td>Site</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the name of the place?</th>
+                                        <td>gn:name</td>
+                                        <td>Bethel Woods Center for the Arts</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the alternate name of the place?</th>
+                                        <td>gn:alternateName</td>
+                                        <td>Max Yangsur’s diary farm</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the feature class of the place?</th>
+                                        <td>gn:FeatureClass</td>
+                                        <td>Landmark</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In which country is the place located?</th>
+                                        <td>gn:parentCountry</td>
+                                        <td>United States</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the country code?</th>
+                                        <td>gn:countryCode</td>
+                                        <td>US</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the dimension of the place?</th>
+                                        <td>P43_has_dimension>E54_dimension</td>
+                                        <td>800 acre</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What type is it?</th>
+                                        <td>dbo:type</td>
+                                        <td>Outdoor amphitheatre</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the address?</th>
+                                        <td>dbo:address</td>
+                                        <td>200 Hurd Road</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the latitude?</th>
+                                        <td>wgs84_pos:long</td>
+                                        <td>41.7014</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the longitude?</th>
+                                        <td>wgs84_pos:lat</td>
+                                        <td>-74.8803</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the altitude?</th>
+                                        <td>wgs84_pos:alt</td>
+                                        <td>413</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is an abstract of the place?</th>
+                                        <td>dbo:abstract</td>
+                                        <td>The Bethel Woods Center for the Arts is a not-for-profit performing arts center and museum located at the site of the 1969 Woodstock festival in Bethel, New York, which took place on a parcel of the original Max Yasgur's Dairy Farm. Located approximately 90 miles (140 km) from New York City, the 15,000-capacity outdoor performing arts venue, intimate 400-seat Event Gallery, and Museum at Bethel Woods are located on a 2,000-acre (8.1 km2) campus. Bethel Woods offers a diverse selection of performances, educational and community programs, including the annual Harvest Festival, which covers topics such as history and the arts, community collaboration and outreach.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is the current owner?</th>
+                                        <td>P52_has_current_owner>E39_Actor</td>
+                                        <td>Alan Gerry</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who is the former owner?</th>
+                                        <td>P51_has_former_or_current_owner>E39_Actor</td>
+                                        <td>Max Yangsur</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">When did the ownership change?</th>
+                                        <td>dbo:dateAgreement</td>
+                                        <td>1997</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the access to the site?</th>
+                                        <td>schema:publicAccess</td>
+                                        <td>The site has public access</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the maximum attendee capacity</th>
+                                        <td>schema:maximumAttendeeCapacity</td>
+                                        <td>15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event associated to the place?</th>
+                                        <td>schema:event</td>
+                                        <td>Woodstock Festival</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the wikipedia article about the place?</th>
+                                        <td>gn:wikipediaArticle</td>
+                                        <td><a href="https://en.wikipedia.org/wiki/Bethel_Woods_Center_for_the_Arts">https://en.wikipedia.org/wiki/Bethel_Woods_Center_for_the_Arts</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">What is the tour booking page?</th>
+                                        <td>schema:tourBookingPage</td>
+                                        <td><a href="https://www.bethelwoodscenter.org/">https://www.bethelwoodscenter.org/</a></td>
                                     </tr>
                                     </tbody>
-                                </table>
+                                    </table>
                             </div>
                             <a id="concept"></a>
                             <hr />
                             <br>
                             <div class="header">
                                 <h2><span class="text-danger">C</span>oncept</h2>
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis.</p>
+                                <p style="text-align: justify;">Vietnam War Protest</p>
                                 <table class="table">
                                     <thead class="thead">
                                     <tr class="table-danger">
                                         <th scope="col">Question</th>
                                         <th scope="col">Predicate</th>
                                         <th scope="col">Object</th>
-                                    </tr>
+										</tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the title?</th>
+                                        <td>crm:P102_has_title</td>
+                                        <td>Vietnam war protest</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the type?</th>
+                                        <td>rdf:type</td>
+                                        <td>Concept</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the subject?</th>
+                                        <td>dcterms:subject</td>
+                                        <td>Antiwar/Social movement</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">blablabla?</th>
-                                        <td>...</td>
-                                        <td>...</td>
+                                        <th scope="row">What is the core of the concept?</th>
+                                        <td>dcterms:abstract</td>
+                                        <td>Vietnam War protests began small among peace activists and leftist intellectuals on college campuses but gained national prominence in 1965, after the United States began bombing North Vietnam in earnest. Anti-war marches and other protests, such as the ones organized by Students for a Democratic Society (SDS), attracted a widening base of support over the next three years, peaking in early 1968 after the successful Tet Offensive by North Vietnamese troops proved that war’s end was nowhere in sight.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the reason to be of the concept?</th>
+                                        <td>crm:P21_had_general_purpose</td>
+                                        <td>Antiwar protests</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the concepts time span?</th>
+                                        <td>crm:P4_has_time_span</td>
+                                        <td>1965-1975</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the year that the concept falls within?</th>
+                                        <td>crm:P10_falls_within</td>
+                                        <td>1969</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What has the concept influenced?</th>
+                                        <td>prov:influenced</td>
+                                        <td>People protest in different ways for Peace </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event related to the concept?</th>
+                                        <td>dbo:related</td>
+                                        <td>Vietnam War</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who was an active member of the concept?</th>
+                                        <td>foaf: member</td>
+                                        <td>Abbi Hoffman</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was motivated by?</th>
+                                        <td>crm:P17_was_motivated_by</td>
+                                        <td>From the question if the government’s assertion that it was fighting a democratic war to liberate the South Vietnamese people from Communist aggression.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What the concept was influenced by?</th>
+                                        <td>crm:P15_was_influenced_by</td>
+                                        <td>Anti-War movement</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What was based on?</th>
+                                        <td>crm:P136_was_based_on</td>
+                                        <td>Anti-imperialism movement</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What represents?</th>
+                                        <td>crm:P138_represents</td>
+                                        <td>Against the escalating role of United States in the Vietnam War</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">In what type of event were relevant?</th>
+                                        <td>mo:festival</td>
+                                        <td>WOODSTOCK</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What type of musical manifestation?</th>
+                                        <td>mo:tribute_to</td>
+                                        <td>Anti-war movement</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the place related to the concept?</th>
+                                        <td>dbpedia:related</td>
+                                        <td>United States</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the primary source?</th>
+                                        <td>prov:PrimarySource</td>
+                                        <td><a href="https://www.history.com/topics/vietnam-war/vietnam-war-protests">https://www.history.com/topics/vietnam-war/vietnam-war-protests</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the alternative source?</th>
+                                        <td>prov:alternateOf</td>
+                                        <td><a href="https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War 
+">https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
