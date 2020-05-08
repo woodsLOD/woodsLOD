@@ -104,7 +104,7 @@
                     <div class="col-12 col-md-8 offset-md-2">
                         <div class="header">
                             <h2><span class="text-success">C</span><span class="text-danger">o</span><span class="text-warning">n</span><span class="text-info">c</span>eptual Model</h2>
-                            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo ante tortor, ac laoreet turpis luctus tincidunt. Cras at pellentesque ipsum. Nulla at velit in eros fermentum venenatis. Proin vel nisi eu urna venenatis vestibulum nec nec quam. Suspendisse justo nisi, malesuada vel enim eget, feugiat commodo eros. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque sit amet elit eget nunc ultrices pretium vel nec turpis. Ut ultricies laoreet felis, vel lacinia nibh convallis aliquet. Donec eget nibh ac justo tincidunt bibendum a sit amet sapien. In luctus mi quis est viverra, et faucibus nunc vulputate.
+                            <p style="text-align: justify;">We want our data to be accessible, readable, usable, acceptable and most of all linked. For that purpose, we have used several ontologies to describe in the most efficient way all the details of our entities and do the step forward from the theoretical model.
                             <hr />
                             <div>
                                 <h2><span class="text-success">W</span>ho</h2>
@@ -431,7 +431,7 @@
                                 </table>
                             </div>
 							<div>
-                                <h2><span class="text-success">W</span>hat</h2>
+                                <h2><span class="text-danger">W</span>hat</h2>
                                 <table class="table">
                                     <thead class="thead">
                                     <tr class="table-danger">
@@ -442,118 +442,99 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th scope="row">What is the type of entity?</th>
-                                        <td>eac-cpf:entityType</td>
-                                        <td>EAC-CPF</td>
+                                        <th scope="row">What is the title?</th>
+                                        <td>crm:P102_has_title</td>
+                                        <td>CIDOC-CRM</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">What is the person's name?</th>
-                                        <td>foaf:firtsName</td>
+                                        <th scope="row">What is the type?</th>
+                                        <td>rdf:type</td>
+                                        <td>RDF(S)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the subject?</th>
+                                        <td>dcterms:subject</td>
+                                        <td>DCMI Metadata Terms</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the core of the concept?</th>
+                                        <td>dcterms:abstract</td>
+                                        <td>DCMI Metadata Terms</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the reason to be of the concept?</th>
+                                        <td>crm:P21_had_general_purpose</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the concepts time span?</th>
+                                        <td>crm:P4_has_time_span</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Which is the year that the concept falls within?</th>
+                                        <td>crm:P10_falls_within</td>
+                                        <td>CIDOC-CRM</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What has the concept influenced?</th>
+                                        <td>prov:influenced</td>
+                                        <td>PROV-O</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">What is the event related to the concept?</th>
+                                        <td>dbo:related</td>
+                                        <td>DBpedia Ontology</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Who was an active member of the concept?</th>
+                                        <td>foaf: member</td>
                                         <td>FOAF</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">What is the person's surname?</th>
-                                        <td>foaf:lastName</td>
-                                        <td>FOAF</td>
+                                        <th scope="row">What was motivated by?</th>
+                                        <td>crm:P17_was_motivated_by</td>
+                                        <td>CIDOC-CRM</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">What is the person's gender?</th>
-                                        <td>foaf:gender</td>
-                                        <td>FOAF</td>
+                                        <th scope="row">What the concept was influenced by?</th>
+                                        <td>crm:P15_was_influenced_by</td>
+                                        <td>CIDOC-CRM</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">How old is this person at the time of the event?</th>
-                                        <td>foaf:age</td>
-                                        <td>FOAF</td>
+                                        <th scope="row">What was based on?</th>
+                                        <td>crm:P136_was_based_on</td>
+                                        <td>CIDOC-CRM</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">In which place was the person born?</th>
-                                        <td>person:placeOfBirth</td>
-                                        <td>Person Core Vocabulary</td>
+                                        <th scope="row">What represents?</th>
+                                        <td>crm:P138_represents</td>
+                                        <td>CIDOC-CRM</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">In which country was the person born?</th>
-                                        <td>person:countryOfBirth</td>
-                                        <td>Person Core Vocabulary</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">When was the person born?</th>
-                                        <td>core:dateOfBirth</td>
-                                        <td>Core Concepts Ontology</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">In which place did the person die?</th>
-                                        <td>person:placeOfDeath</td>
-                                        <td>Person Core Vocabulary</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">In which country did the person die?</th>
-                                        <td>person:countryOfDeath</td>
-                                        <td>Person Core Vocabulary</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">When did the person die?</th>
-                                        <td>core:dateOfDeath</td>
-                                        <td>Core Concepts Ontology</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Which is the person's citizenship?</th>
-                                        <td>person:citizeship</td>
-                                        <td>Person Core Vocabulary</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">What is the person's occupation?</th>
-                                        <td>core:occupation</td>
-                                        <td>Core Concepts Ontology</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">What did the person do?</th>
-                                        <td>core:knownFor</td>
-                                        <td>Core Concepts Ontology</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">What was the genre play by the person?</th>
-                                        <td>mo:Genre</td>
+                                        <th scope="row">In what type of event were relevant?</th>
+                                        <td>mo:festival</td>
                                         <td>Music Ontology</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">What is the label correlated to the person?</th>
-                                        <td>mo:Label</td>
+                                        <th scope="row">What type of musical manifestation?</th>
+                                        <td>mo:tribute_to</td>
                                         <td>Music Ontology</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">When did the person's activity start?</th>
-                                        <td>mo:activity_start <br>
-                                            dbo:activeYearsStartYear</td>
-                                        <td>Music Ontology <br>
-                                            dbPedia</td>
+                                        <th scope="row">Which is the place related to the concept?</th>
+                                        <td>dbpedia:related</td>
+                                        <td>dbPedia</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">When did the person's activity end?</th>
-                                        <td>mo:activity_end <br>
-                                            dbo:activeYearsEndYear</td>
-                                        <td>Music Ontology <br>
-                                            dbPedia</td>
+                                        <th scope="row">What is the primary source?</th>
+                                        <td>prov:PrimarySource</td>
+                                        <td>PROV-O</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">What is the person’s discography?</th>
-                                        <td>mo:discography</td>
-                                        <td>Music Ontology</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Who is known by this person?</th>
-                                        <td>foaf:know</td>
-                                        <td>FOAF</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">What are the person's past projects?</th>
-                                        <td>foaf:pastProject</td>
-                                        <td>FOAF</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">What is the biographical note of the person?</th>
-                                        <td>eac-cpf:biogHist</td>
-                                        <td>EAC-CPF</td>
+                                        <th scope="row">What is the alternative source?</th>
+                                        <td>prov:alternateOf</td>
+                                        <td>PROV-O</td>
                                     </tr>
                                     </tbody>
                                 </table>
