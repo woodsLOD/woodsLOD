@@ -1,6 +1,9 @@
 #banner{
     background: url("../img/home_cover.jpg");
 }
+table {
+    width: 100%;
+}
 
 td {
     word-break: break-word;
