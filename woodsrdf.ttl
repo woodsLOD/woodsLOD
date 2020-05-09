@@ -17,6 +17,7 @@
 @prefix viaf: <http://viaf.org/> .
 @prefix owl: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core.html> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
 
 <person/abbie_hoffman>
         eac-cpf:entityType foaf:Person ;
@@ -26,9 +27,9 @@
         foaf:age '33' ;
         person:placeOfBirth gn:4956184 ; #Worcester, Massachussets
         person:countryOfBirth gn:6252001 ; #US
-        core:dateOfBirth '1936-11-30' ;
+        core:dateOfBirth '1936-11-30'^^xsd:dateTime ;
         person:placeOfDeath gn:5212831 ; #Solebury, Pennsylvania
-        core:dateOfDeath '1989-04-12' ;
+        core:dateOfDeath '1989-04-12'^^xsd:dateTime ;
         person:citizenship 'American' ;
         core:occupation 'writer' , 'activist' , 'psychologist' , 'speaker' , 'revolutionary' ;
         foaf:pastProject 'He was involved in the Student Nonviolent Coordinating Committee (SNCC), and organized Liberty House.' ;
