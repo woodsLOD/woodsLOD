@@ -1,3 +1,15 @@
 #banner{
     background: url("../img/home_cover.jpg");
 }
+
+td {
+    word-break: break-word;
+}
+
+.smaller_col {
+    width: 30%;
+}
+
+.larger_col {
+    width: 40%;
+}
