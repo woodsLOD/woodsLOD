@@ -19,4 +19,12 @@ td {
 
 .rep_img {
     float: left;
+    max-height: 25em;
+    width: auto;
+}
+
+.tab_title {
+    float: right;
+    font-size: 3rem;
+    text-align: right;
 }
