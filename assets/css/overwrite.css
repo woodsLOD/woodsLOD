@@ -1,3 +1,23 @@
-#banner{
-    background: url("https://i.pinimg.com/474x/d8/28/73/d828732adc71a78baf476e70ffc2a43c.jpg");
+#banner_home{
+    background: url("../img/home_cover.jpg");
 }
+table {
+    width: 100%;
+}
+
+td {
+    word-break: break-word;
+}
+
+.smaller_col {
+    width: 30%;
+}
+
+.larger_col {
+    width: 40%;
+}
+
+/*
+.rep_img {
+    float: right;
+}*/

@@ -1,0 +1,74 @@
+@base <https://woodsLOD.github.io/woodsLOD/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dbo: <http://mappings.dbpedia.org/server/ontology/classes/> .
+@prefix foaf: <//xmlns.com/foaf/0.1/> .
+@prefix mo: <http://musicontology.com/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix core: <https://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix eac-cpf: <https://eac.staatsbibliothek-berlin.de/> .
+@prefix person: <http://www.w3.org/ns/person/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbc: <http://dbpedia.org/category/> .
+@prefix gn: <http://www.geonames.org/ontology> .
+@prefix viaf: <http://viaf.org/> .
+@prefix owl: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core.html> .
+
+<person/abbie_hoffman>
+        eac-cpf:entityType foaf:Person ;
+        foaf:firstName 'Abbot Howard' ;
+        foaf:lastName 'Hoffman' ;
+        foaf:gender 'Male' ;
+        foaf:age '33' ;
+        person:placeOfBirth gn:4956184 ; #Worcester, Massachussets
+        person:countryOfBirth gn:6252001 ; #US
+        core:dateOfBirth '1936-11-30' ;
+        person:placeOfDeath gn:5212831 ; #Solebury, Pennsylvania
+        core:dateOfDeath '1989-04-12' ;
+        person:citizenship 'American' ;
+        core:occupation 'writer' , 'activist' , 'psychologist' , 'speaker' , 'revolutionary' ;
+        foaf:pastProject 'He was involved in the Student Nonviolent Coordinating Committee (SNCC), and organized Liberty House.' ;
+        dbo:movement dbr:Yppie  ; #Youth International Party ("Yippies")
+        dbo:notableWork dbr:Steal_this_Book ;
+        dbo:related [
+                            core:knownFor 'leading proponent of the Flower Power movement.' , <concept/hippie_movement> , dbr:Political_activism , dbr:Anti-war_protest ;
+                            core:notablyAssociatedWith dbr:Counterculture_of_the_1960s, <festival/Woodstock> ;
+                            foaf:know <person/eddie_kramer> ;
+                    ] ;
+        dbo:activeYearsStartYear '1967' ;
+        dbo:activeYearsEndYear '1989' ;
+        mo:Genre 'nonfiction' , 'politics' ;
+        eac-cpf:biogHist <https://en.wikipedia.org/wiki/Abbie_Hoffman> ;
+        owl:sameAs viaf:79408884 .
+
+
+
+        <concept/vietnam_war_protest>
+        eac-cpf:entityType  skos:Concept ;
+        crm:P102_has_title 'Vietnam War protest' ;
+	    dcterms:subject <https://en.wikipedia.org/wiki/Anti-war_movement> ;
+        dcterms:abstract 'Vietnam War protests began small among peace activists and leftist intellectuals on college campuses but gained national prominence in 1965, after the United States began bombing North Vietnam in earnest. Anti-war marches and other protests, such as the ones organized by Students for a Democratic Society (SDS), attracted a widening base of support over the next three years, peaking in early 1968 after the successful Tet Offensive by North Vietnamese troops proved that war’s end was nowhere in sight'@en ;
+        crm:P21_had_general_purpose dbr:Anti-war_protest ;
+        crm:P4_has_time_span '1965 - 1975' ;
+        crm:P10_falls_within dbr:1960s , <date/1969> ;
+        crm:P7_took_place_at gn:6252001 ; #US
+        dbo:related [
+            dbo:related dbr:Vietnam_War, dbr:Vietnam ; 
+            crm:P17_was_motivated_by 'From the question if the government’s assertion that it was fighting a democratic war to liberate the South Vietnamese people from Communist aggression.' ;
+            prov:influenced 'People protest in different ways for Peace' ;
+            crm:P15_was_influenced_by dbr:Anti-war_protest ;
+            crm:P136_was_based_on <https://en.wikipedia.org/wiki/Anti-imperialism> ;
+        ] ;
+        dbp:causes dbr:United_States_Involvement_in_the_Vietnam_War ;
+        crm:P138_represents 'Against the escalating role of United States In the Vietnam War' ;
+        foaf:member </abbie_hoffman> ;
+        mo:festival <event/Woodstock> ;
+	    mo:tribute_to dbr:Anti-war_protest ;
+	    prov:PrimarySource <https://www.history.com/topics/vietnam-war/vietnam-war-protests> ;
+        prov:alternateOf <https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War> ;
+        owl:sameAs dbc:Protests_against_the_Vietnam_War .
+
