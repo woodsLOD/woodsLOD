@@ -21,10 +21,12 @@ td {
     float: left;
     max-height: 25em;
     width: auto;
+    position:inline;
 }
 
 .tab_title {
     float: right;
     font-size: 3rem;
+    line-height: 1.2em;
     text-align: right;
 }
