@@ -1,4 +1,4 @@
-@base <https://woodsLOD.github.io/woodsLOD/> .
+@base <https://woodslod.github.io/woodsLOD/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -37,14 +37,15 @@
         dbo:notableWork dbr:Steal_this_Book ;
         dbo:related [
                             core:knownFor 'leading proponent of the Flower Power movement.' , <concept/hippie_movement> , dbr:Political_activism , dbr:Anti-war_protest ;
-                            core:notablyAssociatedWith dbr:Counterculture_of_the_1960s, <festival/Woodstock> ;
+                            core:notablyAssociatedWith dbr:Counterculture_of_the_1960s, <date/woodstock_festival> ;
                             foaf:know <person/eddie_kramer> ;
                     ] ;
         dbo:activeYearsStartYear '1967' ;
         dbo:activeYearsEndYear '1989' ;
         mo:Genre 'nonfiction' , 'politics' ;
         eac-cpf:biogHist <https://en.wikipedia.org/wiki/Abbie_Hoffman> ;
-        owl:sameAs viaf:79408884 .
+        owl:sameAs viaf:79408884 ;
+        foaf:member dbc:Chicago_Seven .
 
 
 
@@ -66,10 +67,11 @@
         ] ;
         dbp:causes dbr:United_States_Involvement_in_the_Vietnam_War ;
         crm:P138_represents 'Against the escalating role of United States In the Vietnam War' ;
-        foaf:member </abbie_hoffman> ;
+        foaf:member <person/abbie_hoffman> ;
         mo:festival <event/Woodstock> ;
 	    mo:tribute_to dbr:Anti-war_protest ;
 	    prov:PrimarySource <https://www.history.com/topics/vietnam-war/vietnam-war-protests> ;
         prov:alternateOf <https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War> ;
-        owl:sameAs dbc:Protests_against_the_Vietnam_War .
+        owl:sameAs dbc:Protests_against_the_Vietnam_War ;
+        skos:broader dbc:Political_theories .
 
