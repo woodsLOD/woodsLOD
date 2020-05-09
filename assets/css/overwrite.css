@@ -1,6 +1,12 @@
 #banner_home{
-    background: url("../img/home_cover.jpg");
+    background: url("../img/provaback.jpg");
 }
+
+#banner_mid{
+    background: url("../img/prova2.png");
+    height:;
+}
+
 table {
     width: 100%;
 }
