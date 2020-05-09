@@ -1,4 +1,4 @@
-#banner{
+#banner_home{
     background: url("../img/home_cover.jpg");
 }
 table {
@@ -16,3 +16,8 @@ td {
 .larger_col {
     width: 40%;
 }
+
+/*
+.rep_img {
+    float: right;
+}*/
