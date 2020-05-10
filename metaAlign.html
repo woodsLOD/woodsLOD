@@ -161,11 +161,11 @@
                                 <td>1XX - Main Entry Fields, <br>
                                     100 - Main Entry-Personal Name, <br>
                                     $a: Personal Name</td>
-                                <td>P94_has_creator, <br>
-                                    E12_Production> P14_carried_out_by> E39_Actor</td>
+                                <td>P94_has_creator,<br>
+                                    P14_carried_out_by> E39_Actor</td>
                                 <td>artist, <br>
                                     name</td>
-                                <td>Creator Display,<br>
+                                <td>Creator,<br>
                                     Role,<br>
                                     Qualifier</td>
                                 <td>< name >, <br>
@@ -179,8 +179,7 @@
                                 <td>25X-28X – Edition and Imprint Fields, <br>
                                     260 - Publication, Distribution etc, <br>
                                     $b: Name of publisher, distributor, etc.</td>
-                                <td>P108_has_produced  E5_Event>, <br>
-                                    P11_had_participants> E39_Actor</td>
+                                <td>P108_has_produced> E5_Event></td>
                                 <td>label</td>
                                 <td>Role</td>
                                 <td>< originalInfo >, <br>
@@ -194,7 +193,7 @@
                                 <td>5XX - Note Fields <br>
                                     508 - Creation/Production Credits Note <br>
                                     $a: Creation/production credits note </td>
-                                <td>E5_Event> P11_had_participants> E39_Actor.</td>
+                                <td>P11_had_participant> E39_Actor</td>
                                 <td>/</td>
                                 <td>Role</td>
                                 <td>< role >, <br>
@@ -208,7 +207,8 @@
                                     264 - Production, Publication, Distribution, Manufacture, and Copyright Notice <br>
                                     $b: Name of publisher, distributor, etc. <br>
                                     $c: Date of production, publication, distribution, manufacture, or copyright notice</td>
-                                <td>E72_Legal_Object> P105_right_held_by> E39_Actor</td>
+                                <td>P105_right_held_by> E39_Actor,<br>
+                                    P52_has current_owner> E39_Actor</td>
                                 <td>/</td>
                                 <td>/</td>
                                 <td>< accessConditions >, <br>
@@ -244,7 +244,7 @@
                                 <td>Date, <br>
                                     Date.Created</td>
                                 <td>/</td>
-                                <td>E12_Production/P4_has_time-span/E52_Time-Span</td>
+                                <td>E12_Production>P4_has_time-span>E52_Time-Span</td>
                                 <td>/</td>
                                 <td>Creation Date,<br>
                                     DisplayDate</td>
@@ -260,7 +260,7 @@
                                 <td>25X-28X – Edition and Imprint Fields <br>
                                     260 - Publication, Distribution etc. <br>
                                     $c – Date of publication, distribution, etc.</td>
-                                <td>/</td>
+                                <td>E12_Production>P4_has_time-span>E52_Time-Span</td>
                                 <td>release, release-date</td>
                                 <td>/</td>
                                 <td>< originInfo >, <br>
@@ -304,7 +304,7 @@
                                 <td>25X-28X – Edition and Imprint Fields <br>
                                     260 - Publication, Distribution etc. <br>
                                     $a – Place of publication, distribution, etc.</td>
-                                <td>/</td>
+                                <td>P7_took_place_at> E53_place</td>
                                 <td>release, <br>
                                     release-country, <br>
                                     area, area-name, area-type</td>
@@ -333,8 +333,7 @@
                                 <td>Coverage, <br>
                                     Coverage.Spatial</td>
                                 <td>/</td>
-                                <td>E12_Production/ <br>
-                                    P7_took_place_at/E53_place</td>
+                                <td>P7_took_place_at> E53_place</td>
                                 <td>place, place-type, place-coordinates</td>
                                 <td>Creation Location</td>
                                 <td>< originInfo >, <br>
@@ -382,7 +381,7 @@
                                     $a: Title <br>
                                     $b: Remainder of title <br>
                                     $c: Statement of responsability</td>
-                                <td>E71_Man-Made_Thing> P102_has_title> E35_Title</td>
+                                <td>P102_has_title> E35_Title</td>
                                 <td>release, <br>
                                     release-title</td>
                                 <td>Title</td>
@@ -395,9 +394,9 @@
                                 <th scope="row">What is the type?</th>
                                 <td>Type</td>
                                 <td>/</td>
-                                <td>E1_CRM_Entity> P2_has_type> E55_Type</td>
+                                <td>P2_has_type> E55_Type</td>
                                 <td>/</td>
-                                <td>Work Type</td>
+                                <td>Type</td>
                                 <td>< typeOfResource ></td>
                                 <td>type</td>
                             </tr>
@@ -417,7 +416,7 @@
                                 <td>5XX - Note Fields <br>
                                     546 - Language Note <br>
                                     $a: Language note</td>
-                                <td>E33_Language_Object> P72_has_language> E56_Language</td>
+                                <td>P72_has_language> E56_Language</td>
                                 <td>release, <br>
                                     release-language</td>
                                 <td>Language</td>
@@ -440,7 +439,7 @@
                                     651: Subject Added Entry-Geographic Name <br>
                                     $a: Geographic name $x: General subdivision <br>
                                     $y: Chronological subdivision</td>
-                                <td>E1_CRM_Entity> P129_is_subject_of> E89_Propositional_Object</td>
+                                <td>P129_is_about</td>
                                 <td>/</td>
                                 <td>Subject</td>
                                 <td>< subject >, <br>
@@ -459,7 +458,7 @@
                                 <td>release, <br>
                                     release-medium, <br>
                                     release-medium-format</td>
-                                <td>Measurements,<br> Format></td>
+                                <td>Measurements,<br> Format</td>
                                 <td>< physicalDescription >, <br>
                                     < form >, <br>
                                     < extend ></td>
@@ -473,7 +472,7 @@
                                     $a: Extent <br>
                                     $b: Other physical details <br>
                                     $c: Dimensions</td>
-                                <td>E1_CRM_Entity> P3_has_note> E62_string</td>
+                                <td>P3_has_note</td>
                                 <td>/</td>
                                 <td>Description</td>
                                 <td>< subject >, <br>
