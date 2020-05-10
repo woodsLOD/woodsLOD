@@ -1,5 +1,5 @@
 @base <https://woodslod.github.io/woodsLOD/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf: <https://www.w3.org/TR/rdf-schema/#> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -20,7 +20,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema> .
 
 <person/abbie_hoffman>
-        eac-cpf:entityType foaf:Person ;
+        rdf:type foaf:Person ;
         foaf:firstName 'Abbot Howard' ;
         foaf:lastName 'Hoffman' ;
         foaf:gender 'Male' ;
@@ -37,7 +37,7 @@
         dbo:notableWork dbr:Steal_this_Book ;
         dbo:related [
                             core:knownFor 'leading proponent of the Flower Power movement.' , <concept/hippie_movement> , dbr:Political_activism , dbr:Anti-war_protest ;
-                            core:notablyAssociatedWith dbr:Counterculture_of_the_1960s, <date/woodstock_festival> ;
+                            core:notablyAssociatedWith dbr:Counterculture_of_the_1960s, <date/festival> ;
                             foaf:know <person/eddie_kramer> ;
                     ] ;
         dbo:activeYearsStartYear '1967' ;
@@ -50,7 +50,7 @@
 
 
         <concept/vietnam_war_protest>
-        eac-cpf:entityType  skos:Concept ;
+        rdf:type  skos:Concept ;
         crm:P102_has_title 'Vietnam War protest' ;
 	    dcterms:subject <https://en.wikipedia.org/wiki/Anti-war_movement> ;
         dcterms:abstract 'Vietnam War protests began small among peace activists and leftist intellectuals on college campuses but gained national prominence in 1965, after the United States began bombing North Vietnam in earnest. Anti-war marches and other protests, such as the ones organized by Students for a Democratic Society (SDS), attracted a widening base of support over the next three years, peaking in early 1968 after the successful Tet Offensive by North Vietnamese troops proved that war’s end was nowhere in sight'@en ;
