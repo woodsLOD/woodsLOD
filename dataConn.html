@@ -107,16 +107,34 @@
                 <div class="col-12 col-md-8 offset-md-2">
                     <div class="header">
                         <h2><span class="text-success">D</span><span class="text-danger">a</span><span class="text-warning">t</span><span class="text-info">a</span> Connection</h2>
-                        <p>Finally, we managed to represent our data description through an RDF statement that we decided to serialize through <b>Turtle</b>>. <br>
-                            We decided to describe two entities involved in our project which represent a very peculiar and maybe not very deepened aspect of the Festival of Woodstock: the political activism and the anit-Vietnam War protests that took place in the “3 days of peace and music” event. <br>
+                        <p>Finally, we managed to represent our data description through an RDF statement that we decided to serialize through <b>Turtle</b>. <br>
+                            We decided to describe two entities involved in our project which represent a very peculiar and maybe not very deepened aspect of the Festival of Woodstock: the political activism and the anti-Vietnam War protests that took place in the “3 days of peace and music” event. <br>
                             From this point of view, the two entities involved are the person <b>Abbie Hoffman</b> and the concept the <b>Vietnam War Protest</b>.</p>
                         <script src="https://gist.github.com/woodsLOD/aef66eb1f5d84bd5fed9066b9feb49e3.js"></script>
                         <br>
                         <a  href="assets/img/rdf-grapher.jpg" target="_blank" class="btn btn-outline-info btn-pill text-info" title="Click here to see the graph">See the Graph</a>
                         <br><br>
-                        <h2>The <span class="text-primary">U</span><span class="text-info">R</span><span class="text-danger">I</span><span class="text-warning">s</span><span class="text-success"></span></h2>
-                        <p>We realized the URIs for our entities involved:<br>
-                        <span class="text-danger">https://woodslod.github.io/woodsLOD/person/abbie_hoffman></span></p>
+                        <h2><span class="text-primary">U</span><span class="text-info">R</span><span class="text-danger">I</span><span class="text-warning">s</span><span class="text-success"></span> and Connections</h2>
+                        <p>As RDF identifies resources through URIs, we wrote URIs for our two entities as if they belonged to a real LOD website:</p>
+                        <ul>
+                            <li>https://woodslod.github.io/woodsLOD/person/abbie_hoffman</li>
+                            <li>https://woodslod.github.io/woodsLOD/concept/vietnam_war_protest</li>
+                        </ul>
+                        <p>We also decided to create more URIs in order to add <b>internal connections</b> among our other entities:</p>
+                        <ul>
+                            <li>https://woodslod.github.io/woodsLOD/person/abbie_hoffman</li>
+                            <li>https://woodslod.github.io/woodsLOD/person/eddie_kramer</li>
+                            <li>https://woodslod.github.io/woodsLOD/date/festival</li>
+                            <li>https://woodslod.github.io/woodsLOD/date/1969</li>
+                            <li>https://woodslod.github.io/woodsLOD/concept/hippie_movement</li>
+                            <li>https://woodslod.github.io/woodsLOD/event/Woodstock</li>
+                        </ul>
+                        <p>For what concerns <b>external connections</b>, we managed to create a variety of links:</p>
+                        <ul>
+                            <li>Term lists and <b>authority control</b> resources able to uniquely identify in the correct form the entities involved. In doing this we mainly used the property defined by OWL <b>owl:sameAs</b> and the authority control by <b>VIAF</b>. Wherever it was impossible to use this form we directly wrote the connected resource with its controlled form, as it happened for the location identification through the use of <b>GeoNames</b>.</li>
+                            <li>Other resources already present in other online repositories, mainly <b>dbpedia</b>. We defined semantic associations related to relations (eg. <b>core:notablyAssociatedWith dbr:Counterculture_of_the_1960s</b> for Abbie Hoffman), people and places (eg. <b>foaf:know &lt;person/eddie_kramer&gt;</b> for Abbie Hoffman), hierarchical connections (eg. <b>skos:broader dbc:Political_theories</b> for Vietnam War Protest), partitive connection (eg. <b>foaf:member dbc:Chicago_Seven</b> fo Abbie Hoffman).</li>
+                            <li>Other resources identified by URL already present in the web, mainly wikipedia resources, such as <b>prov:PrimarySource <a href="https://www.history.com/topics/vietnam-war/vietnam-war-protests" target="_blank">https://www.history.com/topics/vietnam-war/vietnam-war-protests</a></b> for Vietnam War Protest and <b>eac-cpf:biogHist <a href="https://en.wikipedia.org/wiki/Abbie_Hoffman" target="_blank">https://en.wikipedia.org/wiki/Abbie_Hoffman</a></b> for Abbie Hoffman.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
