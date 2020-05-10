@@ -27,9 +27,9 @@
         foaf:age '33' ;
         person:placeOfBirth gn:4956184 ; #Worcester, Massachussets
         person:countryOfBirth gn:6252001 ; #US
-        core:dateOfBirth '1936-11-30'^^xsd:dateTime ;
+        core:dateOfBirth '1936-11-30'^^xsd:date ;
         person:placeOfDeath gn:5212831 ; #Solebury, Pennsylvania
-        core:dateOfDeath '1989-04-12'^^xsd:dateTime ;
+        core:dateOfDeath '1989-04-12'^^xsd:date ;
         person:citizenship 'American' ;
         core:occupation 'writer' , 'activist' , 'psychologist' , 'speaker' , 'revolutionary' ;
         foaf:pastProject 'He was involved in the Student Nonviolent Coordinating Committee (SNCC), and organized Liberty House.' ;
@@ -40,8 +40,8 @@
                             core:notablyAssociatedWith dbr:Counterculture_of_the_1960s, <date/festival> ;
                             foaf:know <person/eddie_kramer> ;
                     ] ;
-        dbo:activeYearsStartYear '1967' ;
-        dbo:activeYearsEndYear '1989' ;
+        dbo:activeYearsStartYear '1967'^^xsd:date ;
+        dbo:activeYearsEndYear '1989'^^xsd:date ;
         mo:Genre 'nonfiction' , 'politics' ;
         eac-cpf:biogHist <https://en.wikipedia.org/wiki/Abbie_Hoffman> ;
         owl:sameAs viaf:79408884 ;
@@ -49,28 +49,28 @@
 
 
 
-        <concept/vietnam_war_protest>
+<concept/vietnam_war_protest>
         rdf:type  skos:Concept ;
         crm:P102_has_title 'Vietnam War protest' ;
-	    dcterms:subject <https://en.wikipedia.org/wiki/Anti-war_movement> ;
+        dcterms:subject <https://en.wikipedia.org/wiki/Anti-war_movement> ;
         dcterms:abstract 'Vietnam War protests began small among peace activists and leftist intellectuals on college campuses but gained national prominence in 1965, after the United States began bombing North Vietnam in earnest. Anti-war marches and other protests, such as the ones organized by Students for a Democratic Society (SDS), attracted a widening base of support over the next three years, peaking in early 1968 after the successful Tet Offensive by North Vietnamese troops proved that war’s end was nowhere in sight'@en ;
         crm:P21_had_general_purpose dbr:Anti-war_protest ;
-        crm:P4_has_time_span '1965 - 1975' ;
+        crm:P4_has_time_span '1965 - 1975'^^xsd:date ;
         crm:P10_falls_within dbr:1960s , <date/1969> ;
         crm:P7_took_place_at gn:6252001 ; #US
         dbo:related [
-            dbo:related dbr:Vietnam_War, dbr:Vietnam ; 
-            crm:P17_was_motivated_by 'From the question if the government’s assertion that it was fighting a democratic war to liberate the South Vietnamese people from Communist aggression.' ;
-            prov:influenced 'People protest in different ways for Peace' ;
-            crm:P15_was_influenced_by dbr:Anti-war_protest ;
-            crm:P136_was_based_on <https://en.wikipedia.org/wiki/Anti-imperialism> ;
-        ] ;
+                            dbo:related dbr:Vietnam_War, dbr:Vietnam ;
+                            crm:P17_was_motivated_by 'From the question if the government’s assertion that it was fighting a democratic war to liberate the South Vietnamese people from Communist aggression.' ;
+                            prov:influenced 'People protest in different ways for Peace' ;
+                            crm:P15_was_influenced_by dbr:Anti-war_protest ;
+                            crm:P136_was_based_on <https://en.wikipedia.org/wiki/Anti-imperialism> ;
+                    ] ;
         dbp:causes dbr:United_States_Involvement_in_the_Vietnam_War ;
         crm:P138_represents 'Against the escalating role of United States In the Vietnam War' ;
         foaf:member <person/abbie_hoffman> ;
         mo:festival <event/Woodstock> ;
-	    mo:tribute_to dbr:Anti-war_protest ;
-	    prov:PrimarySource <https://www.history.com/topics/vietnam-war/vietnam-war-protests> ;
+        mo:tribute_to dbr:Anti-war_protest ;
+        prov:PrimarySource <https://www.history.com/topics/vietnam-war/vietnam-war-protests> ;
         prov:alternateOf <https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War> ;
         owl:sameAs dbc:Protests_against_the_Vietnam_War ;
         skos:broader dbc:Political_theories .
