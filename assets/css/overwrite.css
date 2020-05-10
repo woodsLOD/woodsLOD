@@ -4,11 +4,10 @@
 
 #banner_mid{
     background: url("../img/prova2.png");
-    height:;
 }
 
-nav ul li a:hover {
-    font-style:underline;
+.nav-link:hover {
+    text-decoration: underline;
 
 }
 
