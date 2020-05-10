@@ -7,6 +7,15 @@
     height:;
 }
 
+nav ul li a:hover {
+    font-style:underline;
+
+}
+
+.card-body p.card-text {
+    text-align:justify;
+}
+
 table {
     width: 100%;
 }
