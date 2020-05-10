@@ -45,3 +45,7 @@ td {
     line-height: 1.2em;
     text-align: right;
 }
+
+.uri_list {
+    list-style-type: none;
+}

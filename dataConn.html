@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/lazy.css">
     <link rel="stylesheet" href="./assets/css/demo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/overwrite.css">
 </head>
 <body class="index">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
@@ -116,19 +117,20 @@
                         <br><br>
                         <h2><span class="text-primary">U</span><span class="text-info">R</span><span class="text-danger">I</span><span class="text-warning">s</span><span class="text-success"></span> and Connections</h2>
                         <p>As RDF identifies resources through URIs, we wrote URIs for our two entities as if they belonged to a real LOD website:</p>
-                        <ul>
-                            <li>https://woodslod.github.io/woodsLOD/person/abbie_hoffman</li>
-                            <li>https://woodslod.github.io/woodsLOD/concept/vietnam_war_protest</li>
+                        <ul class="uri_list">
+                            <li class="text-success">https://woodslod.github.io/woodsLOD/person/abbie_hoffman</li>
+                            <li class="text-danger">https://woodslod.github.io/woodsLOD/concept/vietnam_war_protest</li>
                         </ul>
+                        <br>
                         <p>We also decided to create more URIs in order to add <b>internal connections</b> among our other entities:</p>
-                        <ul>
-                            <li>https://woodslod.github.io/woodsLOD/person/abbie_hoffman</li>
-                            <li>https://woodslod.github.io/woodsLOD/person/eddie_kramer</li>
-                            <li>https://woodslod.github.io/woodsLOD/date/festival</li>
-                            <li>https://woodslod.github.io/woodsLOD/date/1969</li>
-                            <li>https://woodslod.github.io/woodsLOD/concept/hippie_movement</li>
-                            <li>https://woodslod.github.io/woodsLOD/event/Woodstock</li>
+                        <ul class="uri_list">
+                            <li class="text-success">https://woodslod.github.io/woodsLOD/person/eddie_kramer</li>
+                            <li class="text-warning">https://woodslod.github.io/woodsLOD/date/festival</li>
+                            <li class="text-warning">https://woodslod.github.io/woodsLOD/date/1969</li>
+                            <li class="text-danger">https://woodslod.github.io/woodsLOD/concept/hippie_movement</li>
+                            <li class="text-dark">https://woodslod.github.io/woodsLOD/event/Woodstock</li>
                         </ul>
+                        <br>
                         <p>For what concerns <b>external connections</b>, we managed to create a variety of links:</p>
                         <ul>
                             <li>Term lists and <b>authority control</b> resources able to uniquely identify in the correct form the entities involved. In doing this we mainly used the property defined by OWL <b>owl:sameAs</b> and the authority control by <b>VIAF</b>. Wherever it was impossible to use this form we directly wrote the connected resource with its controlled form, as it happened for the location identification through the use of <b>GeoNames</b>.</li>
